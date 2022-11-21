@@ -1,15 +1,33 @@
-﻿namespace Lesson10OOP
+﻿using System.Globalization;
+
+namespace Lesson10OOP
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            //ליצור מחלקה של סטודנטים 
+            //T , V
+
+            //prop
+            // T X ;
+            // V Y;
+
+            //main
+            // ליצור אובייקט שבהתחלה מוגדר כ string string
+            // x = "ערך כלשהו"
+            // y =ערך כלשהו
+            //להדפיס את x y 
+
+            Point<string> point = new Point<string>();
+            //Point<int> point1 = new Point<int>();
+            point.X = "sdfsdf";
+
+
             //ליצור Dictionary 
             //מפתח Int  וגם ה value  int
             //להוסיף 5 ערכים 
             //להדפיס בלולאה 
-
-
 
             Dictionary<int,string> listD = new Dictionary<int, string>();
             Dictionary<int, string> list1 = null;
@@ -26,8 +44,6 @@
             //    //Console.WriteLine(item);
             //}
             
-
-
 
             //ליצור רשימה מסוכ string 
             //להוסיף לרשימה 3 ערכים 
