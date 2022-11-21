@@ -12,7 +12,7 @@ namespace Lesson10OOP
         //{
 
         //}
-        public T X;
-   
+        public T X { get; set; }
+
     }
 }
