@@ -4,8 +4,41 @@ namespace Lesson10OOP
 {
     internal class Program
     {
+     
+        static void ChangeNum(int num)
+        {
+           num = 1;
+        }
+        static void ChangeClassAge(Test test)
+        {
+            test.Age = 50;
+            //test.Num2 = 30;
+        }
         static void Main(string[] args)
         {
+            //refernce type  
+            Test test = new Test();
+            test.Age = 20;
+            Console.WriteLine(test.Age);//before
+            ChangeClassAge(test);
+            Console.WriteLine(test.Age);//after
+
+            //value type
+            int num = 0;
+            Console.WriteLine(num);//before
+            ChangeNum(num);//after
+            Console.WriteLine(num);
+
+
+
+           // int num1 = 0;
+           // double num2 = 0;
+           // //Console.WriteLine(num1);
+           // Console.WriteLine(num2);
+           //// ChangeNum(num1);
+           // ChangeNumDouble(num2);
+           // Console.WriteLine(num2);
+
             //ליצור מחלקה של סטודנטים 
             //T , V
 
@@ -19,10 +52,10 @@ namespace Lesson10OOP
             // y =ערך כלשהו
             //להדפיס את x y 
 
-            Students<string,string> students = new Students<string,string>();
-            students.X = "sdfdsf";
-            students.Y = "sdfsdfsdf";
-            Console.WriteLine($"{students.X} {students.Y} ");
+            //Students<string,string> students = new Students<string,string>();
+            //students.X = "sdfdsf";
+            //students.Y = "sdfsdfsdf";
+            //Console.WriteLine($"{students.X} {students.Y} ");
             //Point<string> point = new Point<string>();
             ////Point<int> point1 = new Point<int>();
             //point.X = "sdfsdf";
@@ -42,12 +75,12 @@ namespace Lesson10OOP
             ////במידה ורוצים לשנות את הליסט נשנה לפי ה key
             //listD[1] = "yarin";
             ////Console.WriteLine(listD[1]);
-            
+
             ////foreach (var item in listD)
             ////{
             ////    //Console.WriteLine(item);
             ////}
-            
+
 
             ////ליצור רשימה מסוכ string 
             ////להוסיף לרשימה 3 ערכים 
@@ -60,7 +93,7 @@ namespace Lesson10OOP
             //object obj1 = 0;//boxing unboxing שאלה מתוך ראיון עבודה
             //object obj2 = "sdf";
             //obj1 = obj2;
-           
+
             //int num2 =(int)obj1;
 
             ////List<object> list1 = new List<object>();//הגדרת list list  של object
@@ -78,5 +111,7 @@ namespace Lesson10OOP
             //}
 
         }
+
+       
     }
 }
