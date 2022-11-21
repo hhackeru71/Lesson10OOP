@@ -9,35 +9,59 @@ namespace Lesson10OOP
         {
            num = 1;
         }
-        static void ChangeClassAge(Test test)
+        static void ChangeClassAge(Test exa1)
         {
-            test.Age = 50;
-            //test.Num2 = 30;
+            exa1.Number1 = 3;
+            exa1.Number2 = 4;
+
         }
         static void Main(string[] args)
         {
-            //refernce type  
-            Test test = new Test();
-            test.Age = 20;
-            Console.WriteLine(test.Age);//before
-            ChangeClassAge(test);
-            Console.WriteLine(test.Age);//after
+            //להגדיר class  בשם כלשהו
+            //prop 
+            //number1 
+            //number2
 
-            //value type
-            int num = 0;
-            Console.WriteLine(num);//before
-            ChangeNum(num);//after
-            Console.WriteLine(num);
+            //ליצור בנאי בהתאם 
+
+            //main
+            //לאחר שיוצרים את האובייקט
+            //להדפיס את number1 + number2
+            //לקרוא פונקציה שמקבלת אובייקט
+            // number1 = 30
+            // number2 = 50
+
+            //להדפיס לאחר מכן את number1 + number2
+            Test exa1 = new Test(1,2);
+            Console.WriteLine($"{exa1.Number1 + exa1.Number2}");
+            ChangeClassAge(exa1);
+            Console.WriteLine($"{exa1.Number1 + exa1.Number2}");
 
 
 
-           // int num1 = 0;
-           // double num2 = 0;
-           // //Console.WriteLine(num1);
-           // Console.WriteLine(num2);
-           //// ChangeNum(num1);
-           // ChangeNumDouble(num2);
-           // Console.WriteLine(num2);
+
+            ////refernce type  
+            //Test exa1 = new Test();
+            //exa1.Age = 20;
+            //Console.WriteLine(exa1.Age);//before
+            //ChangeClassAge(exa1);
+            //Console.WriteLine(exa1.Age);//after
+
+            ////value type
+            //int num = 0;
+            //Console.WriteLine(num);//before
+            //ChangeNum(num);//after
+            //Console.WriteLine(num);
+
+
+
+            // int num1 = 0;
+            // double num2 = 0;
+            // //Console.WriteLine(num1);
+            // Console.WriteLine(num2);
+            //// ChangeNum(num1);
+            // ChangeNumDouble(num2);
+            // Console.WriteLine(num2);
 
             //ליצור מחלקה של סטודנטים 
             //T , V
@@ -112,6 +136,6 @@ namespace Lesson10OOP
 
         }
 
-       
+
     }
 }
